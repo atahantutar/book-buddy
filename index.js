@@ -13,9 +13,4 @@ app.use(`/`, routers);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running ${process.env.PORT}`);
-  postgresClient.connect((err) => {
-    err
-      ? console.log(`connection error${err}`)
-      : console.log(`Db connection successful`);
-  });
 });
